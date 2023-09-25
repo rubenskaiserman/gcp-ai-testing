@@ -1,7 +1,7 @@
 from typing import Optional
 
 from google.api_core.client_options import ClientOptions
-from google.cloud import documentai 
+from google.cloud import documentai # type: ignore
 
 def process_document_sample(
     project_id: str,
@@ -49,10 +49,26 @@ def process_document_sample(
 #     file_path="small.pdf"
 # )
 
-process_document_sample(
-    mime_type="application/pdf",
-    project_id="286362658457",
-    location="us",
-    processor_id="ac68117c57f23e39",
-    file_path="small.pdf"
-)
+# process_document_sample(
+#     mime_type="application/pdf",
+#     project_id="286362658457",
+#     location="us",
+#     processor_id="ac68117c57f23e39",
+#     file_path="small.pdf"
+# )
+
+# process_document_sample(
+#   mime_type="application/pdf",
+#   project_id="286362658457",
+#   location="us",
+#   processor_id="81b3aa61059b8239",
+#   file_path="./data_testing/small.pdf"
+# )
+
+# process_document_sample(
+#   mime_type="application/pdf",
+#   project_id="286362658457",
+#   location="us",
+#   processor_id="2dc2a4371453326b",
+#   file_path="./data_testing/small.pdf"
+# )
